@@ -23,6 +23,16 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'faq',
+      label: '常见问题 (FAQ)',
+    },
+    {
+      type: 'doc',
+      id: 'changelog',
+      label: '更新日志',
+    },
+    {
+      type: 'doc',
       id: 'license',
       label: '开源协议',
     },
