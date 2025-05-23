@@ -15,11 +15,17 @@ const config = {
   favicon: 'img/logo.png',
 
   // 自定义字段，用于配置 Giscus 评论系统
+  // 注意：以下配置需要替换为您从 https://giscus.app/ 网站获取的实际配置
+  // 请确保您的 GitHub 仓库已启用 Discussions 功能
   customFields: {
     giscus: {
+      // 格式：用户名/仓库名
       repo: '08820048/code-pins-docs',
+      // 从 giscus.app 获取的仓库 ID
       repoId: 'R_kgDOLgEFdA',
+      // Discussion 分类名称，通常为 'General' 或 'Announcements'
       category: 'Announcements',
+      // 从 giscus.app 获取的分类 ID
       categoryId: 'DIC_kwDOLgEFdM4CdWPd',
     },
   },
