@@ -1,0 +1,42 @@
+/* 页脚自定义样式 */
+
+/* 调整页脚列表项居中 */
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 调整页脚标题居中 */
+.footer__title {
+  text-align: center;
+}
+
+/* 调整页脚链接容器居中 */
+.footer__links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 确保每个列的宽度一致 */
+.footer__col {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 调整版权信息居中 */
+.footer__copyright {
+  text-align: center;
+}
+
+/* JetBrains Marketplace Widget 居中 */
+#yourelement {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
