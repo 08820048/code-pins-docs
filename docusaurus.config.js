@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'CodePins',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/logo1.png',
+  favicon: 'img/logo.png',
 
   // 自定义字段，用于配置 Giscus 评论系统
   customFields: {
@@ -80,7 +80,7 @@ const config = {
         {
           tagName: 'link',
           rel: 'icon',
-          href: '/img/logo1.png',
+          href: '/img/logo.png',
         },
         {
           tagName: 'link',
@@ -105,7 +105,7 @@ const config = {
         title: 'CodePins',
         logo: {
           alt: 'CodePins',
-          src: 'img/logo1.png',
+          src: 'img/logo.png',
         },
         items: [
           {

@@ -37,7 +37,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <main className="main-homepage">
         <section className="hero-section">
-          <img src="/img/logo1.png" alt="CodePins Logo" className="brand-logo" />
+          <img src="/img/logo.png" alt="CodePins Logo" className="brand-logo" />
           <h1 className="brand-title">CodePins</h1>
           <p className="brand-desc">IntelliJ 系列 IDE 专用的极简高效图钉插件，支持代码标记、备注、标签、搜索、拖拽排序、批量操作、分享、导入导出等丰富功能。</p>
           <a className="button button--primary get-started-btn" href="/docs/intro">
