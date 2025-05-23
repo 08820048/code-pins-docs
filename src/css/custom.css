@@ -10,6 +10,9 @@
 /* 导入目录导航样式 */
 @import './toc-custom.css';
 
+/* 导入文档自定义样式 */
+@import './custom-docs.css';
+
 /* 全局网格背景样式 */
 body {
   background-color: var(--ifm-background-color);

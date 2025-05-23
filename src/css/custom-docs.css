@@ -1,0 +1,240 @@
+/* 自定义文档样式 */
+
+/* 步骤容器样式 */
+.step-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: bold;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+/* 功能盒子样式 */
+.feature-box {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content p {
+  margin-bottom: 0.5rem;
+}
+
+.feature-content ul {
+  margin-bottom: 0;
+}
+
+/* 图片容器样式 */
+.image-container {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  font-style: italic;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.feature-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+  transform: scale(1.02);
+}
+
+/* FAQ 容器样式 */
+.faq-container {
+  margin: 1.5rem 0;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.faq-item h4 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 1rem;
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* CTA 容器样式 */
+.cta-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cta-box {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-primary-lightest);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* 代码和键盘样式 */
+code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background-color: var(--ifm-code-background);
+}
+
+kbd {
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 0.9em;
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-primary-lightest);
+  margin: 1rem 0;
+}
+
+/* 表格样式增强 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+th {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  font-weight: bold;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+tr:nth-child(even) {
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* 暗色模式调整 */
+[data-theme='dark'] .feature-box {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .feature-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] kbd {
+  border-color: #444;
+  background-color: #333;
+  color: #f0f0f0;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] blockquote {
+  background-color: rgba(51, 210, 222, 0.1);
+}
+
+[data-theme='dark'] th {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] tr:nth-child(even) {
+  background-color: var(--ifm-background-color-dark);
+}
+
+[data-theme='dark'] .cta-box {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+[data-theme='dark'] .cta-box h3 {
+  color: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .faq-item h4 {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .image-caption {
+  color: var(--ifm-color-emphasis-500);
+}
