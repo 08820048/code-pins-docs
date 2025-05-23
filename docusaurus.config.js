@@ -98,9 +98,16 @@ const config = {
           src: 'img/logo1.png',
         },
         items: [
-
-
-
+          {
+            to: '/docs/intro',
+            label: '使用文档',
+            position: 'left',
+          },
+          {
+            to: '/bug-report',
+            label: '报告问题',
+            position: 'left',
+          },
           {
             href: 'https://plugins.jetbrains.com/plugin/27300-codepins--code-bookmarks/edit/versions',
             label: 'Download',
@@ -144,6 +151,10 @@ const config = {
               {
                 label: 'Blog',
                 href: 'https://www.ilikexff.cn',
+              },
+              {
+                label: '问题反馈',
+                to: '/bug-report',
               },
               // JetBrains Marketplace Widget
               {
