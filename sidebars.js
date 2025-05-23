@@ -19,27 +19,22 @@ const sidebars = {
     {
       type: 'doc',
       id: 'intro',
-      label: '插件教程',
     },
     {
       type: 'doc',
       id: 'faq',
-      label: '常见问题 (FAQ)',
     },
     {
       type: 'doc',
       id: 'changelog',
-      label: '更新日志',
     },
     {
       type: 'doc',
       id: 'license',
-      label: '开源协议',
     },
     {
       type: 'doc',
       id: 'privacy',
-      label: '隐私政策',
     },
   ],
 };

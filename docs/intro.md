@@ -1,6 +1,8 @@
 ---
+
 title: CodePins 插件使用教程
 sidebar_position: 1
+
 description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手并高效使用
 ---
 
@@ -29,17 +31,17 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
 
 ## 版本对比
 
-| 功能 | 免费版 | 专业版 |
-|---------|-------|--------|
+| 功能         | 免费版                             | 专业版                    |
+| ------------ | ---------------------------------- | ------------------------- |
 | **图钉功能** | 基础功能（添加、删除、搜索、跳转） | 全部免费版功能 + 高级功能 |
-| **标签数量** | 每个图钉最多 3 个 | 无限标签数量 |
-| **标签种类** | 最多 10 种不同标签 | 无限标签种类 |
-| **图钉数量** | 最多 100 个 | 无限图钉数量 |
-| **分享功能** | 基础分享 | 高级分享（多种分享方式） |
-| **排序功能** | 基础排序 | 高级排序（多种排序方式） |
-| **导入导出** | 基础格式 | 高级格式（支持更多格式） |
-| **水印设置** | 不支持 | 自定义导出图片水印 |
-| **技术支持** | 标准支持 | 优先技术支持 |
+| **标签数量** | 每个图钉最多 3 个                  | 无限标签数量              |
+| **标签种类** | 最多 10 种不同标签                 | 无限标签种类              |
+| **图钉数量** | 最多 100 个                        | 无限图钉数量              |
+| **分享功能** | 基础分享                           | 高级分享（多种分享方式）  |
+| **排序功能** | 基础排序                           | 高级排序（多种排序方式）  |
+| **导入导出** | 基础格式                           | 高级格式（支持更多格式）  |
+| **水印设置** | 不支持                             | 自定义导出图片水印        |
+| **技术支持** | 标准支持                           | 优先技术支持              |
 
 > 注：专业版部分功能尚在开发中，升级到专业版将自动享受后续全部高级功能。
 
@@ -54,6 +56,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 ### 基本操作
 
 <div className="step-container">
@@ -63,12 +66,14 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 <div className="step-container">
   <div className="step-number">3</div>
   <div className="step-content">
     <strong>查看图钉</strong> - 打开左侧工具栏中的 <code>CodePins</code> 面板查看所有图钉。
   </div>
 </div>
+
 
 <div className="step-container">
   <div className="step-number">4</div>
@@ -77,12 +82,14 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 <div className="step-container">
   <div className="step-number">5</div>
   <div className="step-content">
     <strong>组织图钉</strong> - 使用标签（如 <code>#bug</code>、<code>#todo</code>）来组织和筛选图钉。
   </div>
 </div>
+
 
 ### 高级功能
 
@@ -103,6 +110,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 ### 添加代码块图钉
 
 <div className="feature-box">
@@ -113,9 +121,10 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 ### 添加效果
 
-![添加图钉示例](https://your-image-url-add-pin.png)
+![image-20250523221032703](https://images.waer.ltd/notes/202505232211169.png)
 
 > 添加图钉后，左侧的 CodePins 面板中会显示新添加的图钉，包含文件名、行号和备注信息。
 
@@ -135,6 +144,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 ### 编辑备注与标签
 
 <div className="feature-box">
@@ -148,6 +158,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
     <p>在标签编辑对话框中，您可以添加、删除或修改标签。</p>
   </div>
 </div>
+
+
 
 ### 标签筛选
 
@@ -163,7 +175,9 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
-![编辑备注与标签示例](https://your-image-url-edit-note-tag.png)
+![image-20250523221228791](https://images.waer.ltd/notes/202505232212861.png)
+
+![image-20250523221249794](https://images.waer.ltd/notes/202505232212858.png)
 
 ## 拖放排序
 
@@ -182,7 +196,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
 </div>
 
 <div className="image-container">
-  <img src="https://your-image-url-drag-drop.png" alt="拖放排序示例" className="feature-image" />
+  <img src="https://images.waer.ltd/notes/202505232213699.png" alt="拖放排序示例" className="feature-image" />
   <div className="image-caption">图钉拖放排序演示</div>
 </div>
 
@@ -205,16 +219,15 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
-<div className="image-container">
-  <img src="https://your-image-url-search.png" alt="搜索图钉示例" className="feature-image" />
-  <div className="image-caption">图钉搜索功能演示</div>
-</div>
+![image-20250523221519021](https://images.waer.ltd/notes/202505232215079.png)
+
 
 :::tip 搜索技巧
+
 - 使用标签前缀（如 <code>#bug</code>）可以快速筛选所有带有该标签的图钉
 - 输入文件名的一部分可以找到特定文件中的图钉
 - 结合标签和关键字可以进行更精确的搜索
-:::
+  :::
 
 ## 图钉跳转
 
@@ -222,19 +235,22 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 的核心功能之一是快速跳转到代码位置，让您能够高效地在代码库中导航：</p>
-    
+
+
     <h4>基本跳转</h4>
     <ul>
       <li>在“图钉”面板中，<strong>双击</strong>任意图钉即可跳转到对应代码位置</li>
       <li>跳转时，编辑器会自动定位到目标位置并高亮显示</li>
     </ul>
-    
+
+
     <h4>快捷键导航</h4>
     <ul>
       <li><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd> - 跳转到上一个图钉</li>
       <li><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>→</kbd> - 跳转到下一个图钉</li>
     </ul>
     <p>这些快捷键可以在不离开编辑器的情况下快速在图钉之间切换。</p>
+
   </div>
 </div>
 
@@ -253,27 +269,31 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 提供多种管理图钉的方式，包括单个删除、批量删除和全部清空：</p>
-    
+
+
     <h4>删除单个图钉</h4>
     <ol>
       <li>在“图钉”面板中，右键点击目标图钉</li>
       <li>选择 <strong>删除本钉</strong> 选项</li>
       <li>图钉将立即被删除，无需确认</li>
     </ol>
-    
+
+
     <h4>批量删除图钉</h4>
     <ol>
       <li>使用 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> 或 <kbd>Shift</kbd> 选中多个图钉</li>
       <li>点击工具栏中的 <strong>批量删除</strong> 按钮</li>
       <li>在确认对话框中确认操作</li>
     </ol>
-    
+
+
     <h4>清空所有图钉</h4>
     <ol>
       <li>点击“图钉”面板顶部的 <strong>清空图钉</strong> 按钮</li>
       <li>在确认对话框中确认操作</li>
       <li>所有图钉将被删除（此操作不可撤销）</li>
     </ol>
+
   </div>
 </div>
 
@@ -290,6 +310,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 :::caution 警告
 清空图钉操作不可撤销。如果您想保留图钉数据，请在清空前先使用导出功能备份您的图钉。
 :::
@@ -300,7 +321,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 提供完善的导入导出功能，方便您备份、迁移或共享图钉数据：</p>
-    
+
+
     <h4>导出图钉</h4>
     <ol>
       <li>在“图钉”面板中，点击顶部的 <strong>导出图钉</strong> 按钮</li>
@@ -308,7 +330,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li>点击“保存”完成导出操作</li>
     </ol>
     <p>导出的文件包含所有图钉数据，包括文件路径、行号、备注和标签等信息。</p>
-    
+
     <h4>导入图钉</h4>
     <ol>
       <li>在“图钉”面板中，点击顶部的 <strong>导入图钉</strong> 按钮</li>
@@ -316,6 +338,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li>点击“打开”完成导入操作</li>
     </ol>
     <p>导入时，插件会自动处理重复项，并尝试匹配相应的文件和位置。</p>
+
   </div>
 </div>
 
@@ -332,11 +355,13 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   </div>
 </div>
 
+
 :::tip 使用技巧
+
 - 定期导出图钉数据作为备份，防止意外丢失
 - 在团队协作时，可以通过导出/导入功能共享重要的代码标记
 - 专业版支持更多导出格式，如 JSON、Markdown 等
-:::
+  :::
 
 ## 分享图钉
 
@@ -344,14 +369,16 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 的分享功能让团队协作更加高效，帮助您轻松地与团队成员分享重要的代码标记：</p>
-    
+
+
     <h4>分享图钉的步骤</h4>
     <ol>
       <li>在“图钉”面板中，选中您想要分享的一个或多个图钉</li>
       <li>点击面板中的 <strong>分享图钉</strong> 按钮</li>
       <li>在弹出的对话框中，选择您需要的分享方式</li>
     </ol>
-    
+
+
     <h4>支持的分享方式</h4>
     <ul>
       <li><strong>复制到剪贴板</strong> - 将图钉信息以文本格式复制到剪贴板</li>
@@ -359,6 +386,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li><strong>生成 Markdown</strong> - 将图钉信息转换为 Markdown 格式（专业版）</li>
       <li><strong>其他格式</strong> - 专业版支持更多分享格式和选项</li>
     </ul>
+
   </div>
 </div>
 
@@ -366,6 +394,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <img src="https://your-image-url-share.png" alt="分享图钉示例" className="feature-image" />
   <div className="image-caption">图钉分享对话框</div>
 </div>
+
 
 :::info 团队协作
 分享图钉功能特别适合团队协作场景，如代码审查、问题讨论和知识共享。当您需要向同事展示特定代码位置时，分享图钉比发送文件路径和行号更直观。
@@ -377,7 +406,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 提供多种排序选项，帮助您以不同的方式组织和查看图钉：</p>
-    
+
+
     <h4>排序方式</h4>
     <ul>
       <li><strong>按文件路径</strong> - 将相同文件中的图钉分组显示</li>
@@ -386,13 +416,15 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li><strong>按优先级</strong> - 根据自定义优先级排序（专业版）</li>
       <li><strong>自定义排序</strong> - 通过拖放手动调整图钉顺序</li>
     </ul>
-    
+
+
     <h4>使用方法</h4>
     <ol>
       <li>在“图钉”面板中，点击顶部的 <strong>排序图钉</strong> 按钮</li>
       <li>在弹出的菜单中，选择您需要的排序方式</li>
       <li>图钉列表将立即按照选择的方式重新排序</li>
     </ol>
+
   </div>
 </div>
 
@@ -401,11 +433,13 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="image-caption">图钉排序选项菜单</div>
 </div>
 
+
 :::tip 排序技巧
+
 - 当处理大量图钉时，按文件路径排序可以帮助您更快地找到相关代码
 - 按添加时间排序可以帮助您追踪最近的工作进展
 - 结合搜索和排序功能可以快速定位到特定类型的图钉
-:::
+  :::
 
 ## 复制图钉
 
@@ -413,7 +447,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 的复制功能可以帮助您快速创建具有相似属性的图钉：</p>
-    
+
+
     <h4>复制图钉的步骤</h4>
     <ol>
       <li>在“图钉”面板中，右键点击您想要复制的图钉</li>
@@ -421,13 +456,15 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li>复制的图钉将保留原图钉的标签和备注信息</li>
       <li>您可以将复制的图钉添加到其他位置</li>
     </ol>
-    
+
+
     <h4>应用场景</h4>
     <ul>
       <li>快速创建多个具有相同标签或备注的图钉</li>
       <li>在相关位置复制相同类型的图钉，例如标记多个需要修复的 bug</li>
       <li>快速创建一系列相关的代码标记点</li>
     </ul>
+
   </div>
 </div>
 
@@ -436,25 +473,29 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="image-caption">图钉复制功能演示</div>
 </div>
 
+
 ## 刷新图钉
 
 <div className="feature-box">
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 的刷新功能可以帮助您在遇到显示问题或文件变化时更新图钉列表：</p>
-    
+
+
     <h4>使用方法</h4>
     <ol>
       <li>在“图钉”面板中，点击顶部的 <strong>刷新图钉</strong> 按钮</li>
       <li>图钉列表将重新加载，并更新所有图钉的状态</li>
     </ol>
-    
+
+
     <h4>应用场景</h4>
     <ul>
       <li>当您切换分支或更新代码库后，需要更新图钉位置</li>
       <li>当图钉列表显示异常或不完整时</li>
       <li>当您怀疑图钉数据与实际文件不同步时</li>
     </ul>
+
   </div>
 </div>
 
@@ -462,6 +503,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <img src="https://your-image-url-refresh.png" alt="刷新图钉示例" className="feature-image" />
   <div className="image-caption">图钉刷新功能演示</div>
 </div>
+
 
 :::tip 小提示
 当您在团队协作中拉取了新的代码变更，或者切换分支后，建议点击刷新按钮以确保图钉位置与当前代码状态一致。
@@ -473,20 +515,23 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>CodePins 提供完善的数据持久化机制，确保您的图钉数据安全可靠：</p>
-    
+
+
     <h4>自动保存</h4>
     <ul>
       <li>每次添加、编辑或删除图钉后，数据会自动保存</li>
       <li>无需手动点击“保存”按钮，所有操作都会自动同步到存储中</li>
       <li>即使在意外关闭 IDE 的情况下，您的图钉数据也不会丢失</li>
     </ul>
-    
+
+
     <h4>数据存储位置</h4>
     <ul>
       <li>图钉数据存储在项目的 <code>.idea/codepins.xml</code> 文件中</li>
       <li>该文件可以被版本控制系统管理，便于团队共享</li>
       <li>专业版支持自定义存储位置和云同步功能</li>
     </ul>
+
   </div>
 </div>
 
@@ -494,6 +539,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <img src="https://your-image-url-persist.png" alt="持久化示例" className="feature-image" />
   <div className="image-caption">图钉数据自动保存演示</div>
 </div>
+
 
 :::info 备份建议
 尽管 CodePins 提供了可靠的数据持久化机制，但对于重要的图钉数据，我们仍然建议定期使用导出功能进行备份，特别是在进行重大项目改动或 IDE 升级前。
@@ -513,7 +559,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       </ol>
     </div>
   </div>
-  
+
+
   <div className="faq-item">
     <h4>问题：图钉数据丢失怎么办？</h4>
     <div className="faq-answer">
@@ -525,7 +572,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       </ol>
     </div>
   </div>
-  
+
+
   <div className="faq-item">
     <h4>问题：图钉面板不显示或无法打开怎么办？</h4>
     <div className="faq-answer">
@@ -537,7 +585,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       </ol>
     </div>
   </div>
-  
+
+
   <div className="faq-item">
     <h4>问题：如何在团队中共享图钉？</h4>
     <div className="faq-answer">
@@ -550,6 +599,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       </ol>
     </div>
   </div>
+
 </div>
 
 :::tip 获取更多帮助
@@ -568,7 +618,8 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li>使用多个标签组合可以更精确地分类图钉</li>
       <li>专业版用户可以使用无限标签，创建更精细的分类系统</li>
     </ul>
-    
+
+
     <h4>快捷键使用技巧</h4>
     <ul>
       <li><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> - 添加图钉</li>
@@ -577,14 +628,16 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> - 快速清除搜索框（专业版）</li>
       <li>在设置中可以自定义快捷键，根据个人习惯调整</li>
     </ul>
-    
+
+
     <h4>代码块标记技巧</h4>
     <ul>
       <li>选中代码块再添加图钉，可以标记整个函数或方法</li>
       <li>代码块图钉在跳转时会自动选中整个代码块</li>
       <li>对于复杂的代码逻辑，使用代码块图钉可以标记完整的上下文</li>
     </ul>
-    
+
+
     <h4>团队协作技巧</h4>
     <ul>
       <li>将 <code>.idea/codepins.xml</code> 添加到版本控制中，实现团队图钉共享</li>
@@ -592,6 +645,7 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
       <li>定期导出图钉数据作为备份，防止意外丢失</li>
       <li>在代码审查中使用图钉标记需要讨论的代码点</li>
     </ul>
+
   </div>
 </div>
 
@@ -605,16 +659,19 @@ description: 详细介绍 CodePins 插件的所有功能，帮助您快速上手
   <div className="feature-icon"></div>
   <div className="feature-content">
     <p>如果您在使用过程中遇到任何问题，或有任何建议，我们提供多种方式为您提供支持：</p>
-    
+
+
     <h4>联系方式</h4>
     <ul>
       <li>在 <a href="https://plugins.jetbrains.com/plugin/20158-codepins" target="_blank">JetBrains Marketplace</a> 插件页面提交反馈</li>
       <li>通过<a href="/bug-report">问题反馈</a>页面提交问题报告</li>
       <li>发送邮件至我们的支持邮箱：<a href="mailto:ilikexff@gmail.com">ilikexff@gmail.com</a></li>
     </ul>
-    
+
+
     <h4>响应时间</h4>
     <p>我们通常会在 1-2 个工作日内回复您的问题。对于紧急问题，我们会尽力提供更快的响应。</p>
+
   </div>
 </div>
 
