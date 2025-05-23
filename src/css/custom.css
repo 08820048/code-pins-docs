@@ -4,6 +4,9 @@
  * work well for content-centric websites.
  */
 
+/* 导入评论区样式 */
+@import './comments.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2bbbc7;

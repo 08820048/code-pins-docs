@@ -14,6 +14,16 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/logo1.png',
 
+  // 自定义字段，用于配置 Giscus 评论系统
+  customFields: {
+    giscus: {
+      repo: '08820048/code-pins-docs',
+      repoId: 'R_kgDOLgEFdA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOLgEFdM4CdWPd',
+    },
+  },
+
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served

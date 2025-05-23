@@ -1,0 +1,33 @@
+/* 评论区样式 */
+.comments-wrapper {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.comments-wrapper::before {
+  content: '💬 评论区';
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary);
+}
+
+/* 适配暗色主题 */
+[data-theme='dark'] .comments-wrapper {
+  border-top-color: var(--ifm-color-emphasis-300);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .comments-wrapper {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  
+  .comments-wrapper::before {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
