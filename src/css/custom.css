@@ -7,6 +7,17 @@
 /* 导入评论区样式 */
 @import './comments.css';
 
+/* 全局网格背景样式 */
+body {
+  background-color: var(--ifm-background-color);
+  background-image: 
+    linear-gradient(rgba(43, 187, 199, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43, 187, 199, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2bbbc7;
@@ -30,4 +41,11 @@
   --ifm-color-primary-lighter: #57dae3;
   --ifm-color-primary-lightest: #7de3ea;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 暗色模式下的网格背景 */
+[data-theme='dark'] body {
+  background-image: 
+    linear-gradient(rgba(51, 210, 222, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(51, 210, 222, 0.03) 1px, transparent 1px);
 }
