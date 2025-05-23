@@ -1,4 +1,4 @@
-/* Bug Report 页面样式 - 终端命令行风格 */
+/* Bug Report 页面样式 - 标准表单风格 */
 
 .container {
   display: flex;
@@ -8,133 +8,19 @@
 
 .formContainer {
   max-width: 800px;
-  background-color: #1e1e2e;
-  color: #f8f8f2;
+  width: 100%;
+  background-color: var(--ifm-background-surface-color);
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  font-family: 'Fira Code', 'Courier New', monospace;
-  overflow: hidden;
-}
-
-/* 终端窗口顶部标题栏 */
-.terminalHeader {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #44475a;
-  padding-bottom: 0.75rem;
-}
-
-.terminalDots {
-  display: flex;
-  gap: 8px;
-  margin-right: 15px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.redDot {
-  background-color: #ff5555;
-}
-
-.yellowDot {
-  background-color: #f1fa8c;
-}
-
-.greenDot {
-  background-color: #50fa7b;
-}
-
-.terminalTitle {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #bd93f9;
-}
-
-/* 终端内容样式 */
-.terminalContent {
-  padding: 1rem 0;
-}
-
-.terminalLine {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: flex-start;
-  line-height: 1.6;
-}
-
-.terminalBlock {
-  margin-bottom: 2rem;
-}
-
-.terminalPrompt {
-  color: #50fa7b;
-  margin-right: 0.75rem;
-  font-weight: bold;
-}
-
-.terminalCommand {
-  color: #f8f8f2;
-  font-weight: normal;
-}
-
-.terminalOutput {
-  color: #8be9fd;
-}
-
-.terminalError {
-  color: #ff5555;
-  font-weight: bold;
-  margin-right: 0.75rem;
-}
-
-.terminalSuccess {
-  color: #50fa7b;
-  font-weight: bold;
-  margin-right: 0.75rem;
-}
-
-.terminalInfo {
-  color: #f1fa8c;
-  font-style: italic;
-}
-
-.cursor {
-  display: inline-block;
-  width: 0.5rem;
-  height: 1.2rem;
-  background-color: #f8f8f2;
-  animation: blink 1s step-end infinite;
-  vertical-align: middle;
-  margin-left: 2px;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 1.5rem;
-  color: #8be9fd;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-.description {
   margin-bottom: 2rem;
-  color: #f1fa8c;
-  font-style: italic;
-  border-left: 3px solid #6272a4;
-  padding-left: 1rem;
-  line-height: 1.6;
+  color: var(--ifm-color-primary);
+  font-size: 2rem;
 }
 
 .form {
@@ -149,163 +35,138 @@
 }
 
 .label {
-  font-weight: normal;
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #ff79c6;
-  display: flex;
-  align-items: center;
-}
-
-.label::before {
-  content: '→';
-  margin-right: 0.5rem;
-  color: #50fa7b;
+  color: var(--ifm-color-emphasis-700);
 }
 
 .required {
-  color: #ff5555;
+  color: #e53e3e;
   margin-left: 0.25rem;
 }
 
-.input, .textarea {
-  background-color: transparent;
-  color: #f8f8f2;
-  border: none;
-  padding: 0.5rem;
-  width: calc(100% - 4rem);
-  font-family: inherit;
-  font-size: 1rem;
-  caret-color: #8be9fd;
-}
-
-.textarea {
-  resize: vertical;
-  min-height: 100px;
-  background-color: rgba(40, 42, 54, 0.3);
-  border-radius: 4px;
+.input {
   padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  transition: border-color 0.2s ease;
 }
 
-.input:focus, .textarea:focus {
+.input:focus {
   outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(43, 187, 199, 0.2);
 }
 
 .inputError {
-  color: #ff5555;
-  text-decoration: underline;
-  text-decoration-color: #ff5555;
-  text-decoration-style: wavy;
+  border-color: #e53e3e;
 }
 
-.inputPrefix {
-  color: #50fa7b;
-  margin-right: 0.5rem;
-  font-weight: bold;
-  font-family: inherit;
-  user-select: none;
-}
-
-.errorText {
-  color: #ff5555;
+.errorMessage {
+  color: #e53e3e;
   font-size: 0.875rem;
   margin-top: 0.5rem;
-  margin-bottom: 0;
-  font-family: inherit;
-  display: flex;
-  align-items: center;
 }
 
-.errorText::before {
-  content: '!';
-  display: inline-flex;
+.formActions {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
-  background-color: #ff5555;
-  color: #282a36;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  font-weight: bold;
-  font-size: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .submitButton {
-  background-color: transparent;
-  color: #50fa7b;
-  border: 1px solid #50fa7b;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
-  font-family: inherit;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-.submitButton::before {
-  content: '$ ';
-  margin-right: 0.5rem;
-  color: #50fa7b;
-  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 .submitButton:hover {
-  background-color: rgba(80, 250, 123, 0.1);
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.submitButton:disabled {
+  background-color: var(--ifm-color-emphasis-300);
+  cursor: not-allowed;
+}
+
+.thankYouMessage {
+  text-align: center;
+  padding: 2rem;
+}
+
+.successMessage {
+  margin-bottom: 2rem;
+}
+
+.successMessage h2 {
+  color: var(--ifm-color-success);
+  margin-bottom: 1rem;
+}
+
+.homeLink {
+  display: inline-block;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.homeLink:hover {
+  background-color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+  color: white;
 }
 
 .footer {
   margin-top: 2rem;
   text-align: center;
-}
-
-.homeLink {
-  display: inline-block;
-  margin-top: 1.5rem;
-  color: #8be9fd;
-  text-decoration: none;
-  font-family: inherit;
-  position: relative;
-}
-
-.homeLink::before {
-  content: '$ cd';
-  color: #50fa7b;
-  margin-right: 0.5rem;
-}
-
-.homeLink:hover {
-  text-decoration: underline;
-}
-
-.thankYouMessage {
-  padding: 2rem 0;
-}
-
-.thankYouMessage .terminalLine {
-  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
 }
 
 .emailLink {
-  color: #8be9fd;
-  text-decoration: underline;
-  transition: color 0.2s ease;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
 }
 
 .emailLink:hover {
-  color: #ff79c6;
+  text-decoration: underline;
 }
 
-/* 响应式调整 */
+/* Dark mode adjustments */
+[data-theme='dark'] .input {
+  background-color: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .input:focus {
+  box-shadow: 0 0 0 2px rgba(51, 210, 222, 0.2);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .formContainer {
     padding: 1.5rem;
   }
   
   .title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formActions {
+    justify-content: center;
   }
 }
