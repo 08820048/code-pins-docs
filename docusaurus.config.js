@@ -120,11 +120,6 @@ const config = {
             position: 'left',
           },
           {
-            to: '/bug-report',
-            label: '报告问题',
-            position: 'left',
-          },
-          {
             href: 'https://plugins.jetbrains.com/plugin/27300-codepins--code-bookmarks/edit/versions',
             label: 'Download',
             position: 'right',
