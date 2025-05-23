@@ -22,11 +22,11 @@ const config = {
       // 格式：用户名/仓库名
       repo: '08820048/code-pins-docs',
       // 从 giscus.app 获取的仓库 ID
-      repoId: 'R_kgDOLgEFdA',
+      repoId: 'R_kgDOOu8A3g',
       // Discussion 分类名称，通常为 'General' 或 'Announcements'
       category: 'Announcements',
       // 从 giscus.app 获取的分类 ID
-      categoryId: 'DIC_kwDOLgEFdM4CdWPd',
+      categoryId: 'DIC_kwDOOu8A3s4Cqff9',
     },
   },
 
