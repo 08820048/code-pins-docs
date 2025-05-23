@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "CodePins",
+    "description": "导航栏标题"
+  },
+  "logo.alt": {
+    "message": "CodePins",
+    "description": "导航栏 Logo 的 alt 文本"
+  },
+  "item.label.Tutorial": {
+    "message": "教程",
+    "description": "导航栏项：教程"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "导航栏项：博客"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "导航栏项：GitHub"
+  }
+}
