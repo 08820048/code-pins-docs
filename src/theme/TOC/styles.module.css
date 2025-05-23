@@ -1,0 +1,62 @@
+.tocWrapper {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  position: sticky;
+  top: 80px;
+}
+
+.tocTitle {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-primary);
+}
+
+.tocItemsContainer {
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+/* 自定义滚动条样式 */
+.tocItemsContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tocItemsContainer::-webkit-scrollbar-track {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 10px;
+}
+
+.tocItemsContainer::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+}
+
+.tocItemsContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-400);
+}
+
+.tableOfContents {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+/* 移动设备上的目录样式 */
+@media (max-width: 996px) {
+  .tocWrapper {
+    position: relative;
+    top: 0;
+  }
+  
+  .tocItemsContainer {
+    max-height: none;
+    overflow-y: visible;
+  }
+}

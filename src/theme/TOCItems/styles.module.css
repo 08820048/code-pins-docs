@@ -1,0 +1,44 @@
+.tocItems {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-right: 5px;
+}
+
+/* 自定义滚动条样式 */
+.tocItems::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tocItems::-webkit-scrollbar-track {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 10px;
+}
+
+.tocItems::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+}
+
+.tocItems::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-400);
+}
+
+/* 活动链接样式增强 */
+.tocLinkActive {
+  font-weight: 600;
+  position: relative;
+  background-color: rgba(43, 187, 199, 0.1);
+  border-left: 2px solid var(--ifm-color-primary);
+  transition: all 0.2s ease;
+}
+
+/* 暗色模式调整 */
+[data-theme='dark'] .tocLinkActive {
+  background-color: rgba(51, 210, 222, 0.1);
+}
+
+/* 平滑滚动效果 */
+.tocItems {
+  scroll-behavior: smooth;
+}

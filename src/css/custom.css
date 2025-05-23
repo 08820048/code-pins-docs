@@ -7,6 +7,9 @@
 /* 导入评论区样式 */
 @import './comments.css';
 
+/* 导入目录导航样式 */
+@import './toc-custom.css';
+
 /* 全局网格背景样式 */
 body {
   background-color: var(--ifm-background-color);
