@@ -45,20 +45,32 @@ export default function Home() {
           </a>
         </section>
         <section className="features-section">
-          <div className="features-grid">
-            <div className="feature-card">
-              <h3>📌 代码图钉</h3>
-              <p>一键标记关键代码，支持备注与标签。</p>
-            </div>
-            <div className="feature-card">
-              <h3>🔍 极速搜索</h3>
-              <p>本地中文全文检索，秒级定位。</p>
-            </div>
-            <div className="feature-card">
-              <h3>🧩 拖拽排序</h3>
-              <p>支持拖放、批量管理、团队协作。</p>
-            </div>
-          </div>
+        <div className="features-grid">
+        <div className="feature-card">
+          <h3>📌 代码图钉</h3>
+          <p>一键标记关键代码，支持备注与标签。快速定位重要代码位置，提高开发效率。</p>
+        </div>
+        <div className="feature-card">
+          <h3>🔍 极速搜索</h3>
+          <p>本地中文全文检索，秒级定位。支持按文件路径、备注内容或标签快速筛选，让重要代码触手可及。</p>
+        </div>
+        <div className="feature-card">
+          <h3>🧩 拖拽排序</h3>
+          <p>支持拖放、批量管理、团队协作。自定义组织图钉顺序，让代码导航更符合您的工作流。</p>
+        </div>
+        <div className="feature-card">
+          <h3>💾 持久化存储</h3>
+          <p>项目级自动保存，重启IDE后仍可恢复。所有图钉数据安全保存，确保您的工作连续性不受影响。</p>
+        </div>
+        <div className="feature-card">
+          <h3>🏷️ 智能标签</h3>
+          <p>使用#标签组织图钉，支持多维度筛选。轻松对图钉进行分类，快速找到特定类型的代码位置。</p>
+        </div>
+        <div className="feature-card">
+          <h3>🖼️ 代码预览</h3>
+          <p>悬停即可查看代码内容，无需切换文件。提高上下文理解效率，减少工作流中断。</p>
+        </div>
+      </div>
         </section>
       </main>
     </Layout>
