@@ -1,0 +1,21 @@
+{
+  "name": "CodePins 文档",
+  "short_name": "CodePinsDocs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#317EFB",
+  "theme_color": "#317EFB",
+  "description": "CodePins 插件官方文档，IntelliJ 系列 IDE 极简高效图钉插件。",
+  "icons": [
+    {
+      "src": "/img/logo1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
