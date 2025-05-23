@@ -1,14 +1,42 @@
 {
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "Footer category: Documentation links"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "Footer category: Community links"
+  },
+  "link.title.CodePins": {
+    "message": "CodePins",
+    "description": "Footer category: CodePins links"
+  },
   "link.item.label.License": {
     "message": "License",
     "description": "Footer link: License"
   },
+  "link.item.label.Privacy Policy": {
+    "message": "Privacy Policy",
+    "description": "Footer link: Privacy Policy"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "Footer link: X (Twitter)"
+  },
+  "link.item.label.developers": {
+    "message": "Developers",
+    "description": "Footer link: JetBrains developers"
+  },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "Footer link: External blog https://www.ilikexff.cn"
+    "description": "Footer link: External blog"
   },
-  "link.item.label.Privacy Policy": {
-    "message": " 2025 CodePins. All rights reserved.",
-    "description": "Footer link: Privacy Policy"
+  "link.item.label.问题反馈": {
+    "message": "Bug Report",
+    "description": "Footer link: Bug report form"
+  },
+  "copyright": {
+    "message": "© 2025 CodePins. All rights reserved.",
+    "description": "Footer copyright text"
   }
 }

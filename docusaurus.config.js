@@ -46,7 +46,17 @@ const config = {
 
   i18n: {
     defaultLocale: 'zh-CN',
-    locales: ['zh-CN'],
+    locales: ['zh-CN', 'en'],
+    localeConfigs: {
+      'zh-CN': {
+        label: '中文',
+        direction: 'ltr',
+      },
+      'en': {
+        label: 'English',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -127,6 +137,10 @@ const config = {
           {
             href: 'https://plugins.jetbrains.com/plugin/27300-codepins--code-bookmarks/edit/versions',
             label: 'Download',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
