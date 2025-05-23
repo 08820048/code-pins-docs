@@ -1,4 +1,4 @@
-/* Bug Report 页面样式 */
+/* Bug Report 页面样式 - 终端命令行风格 */
 
 .container {
   display: flex;
@@ -7,24 +7,134 @@
 }
 
 .formContainer {
-  width: 100%;
-  max-width: 700px;
-  background-color: var(--ifm-background-surface-color);
+  max-width: 800px;
+  background-color: #1e1e2e;
+  color: #f8f8f2;
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  overflow: hidden;
+}
+
+/* 终端窗口顶部标题栏 */
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #44475a;
+  padding-bottom: 0.75rem;
+}
+
+.terminalDots {
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.redDot {
+  background-color: #ff5555;
+}
+
+.yellowDot {
+  background-color: #f1fa8c;
+}
+
+.greenDot {
+  background-color: #50fa7b;
+}
+
+.terminalTitle {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bd93f9;
+}
+
+/* 终端内容样式 */
+.terminalContent {
+  padding: 1rem 0;
+}
+
+.terminalLine {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.terminalBlock {
+  margin-bottom: 2rem;
+}
+
+.terminalPrompt {
+  color: #50fa7b;
+  margin-right: 0.75rem;
+  font-weight: bold;
+}
+
+.terminalCommand {
+  color: #f8f8f2;
+  font-weight: normal;
+}
+
+.terminalOutput {
+  color: #8be9fd;
+}
+
+.terminalError {
+  color: #ff5555;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.terminalSuccess {
+  color: #50fa7b;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.terminalInfo {
+  color: #f1fa8c;
+  font-style: italic;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.5rem;
+  height: 1.2rem;
+  background-color: #f8f8f2;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: var(--ifm-color-primary);
+  color: #8be9fd;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .description {
-  text-align: center;
   margin-bottom: 2rem;
-  color: var(--ifm-color-secondary-darkest);
+  color: #f1fa8c;
+  font-style: italic;
+  border-left: 3px solid #6272a4;
+  padding-left: 1rem;
+  line-height: 1.6;
 }
 
 .form {
@@ -39,63 +149,112 @@
 }
 
 .label {
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 0.5rem;
+  color: #ff79c6;
+  display: flex;
+  align-items: center;
+}
+
+.label::before {
+  content: '→';
+  margin-right: 0.5rem;
+  color: #50fa7b;
 }
 
 .required {
-  color: #e53e3e;
+  color: #ff5555;
   margin-left: 0.25rem;
 }
 
 .input, .textarea {
-  padding: 0.75rem;
-  border: 1px solid var(--ifm-color-gray-300);
-  border-radius: 4px;
+  background-color: transparent;
+  color: #f8f8f2;
+  border: none;
+  padding: 0.5rem;
+  width: calc(100% - 4rem);
+  font-family: inherit;
   font-size: 1rem;
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-  transition: border-color 0.3s ease;
+  caret-color: #8be9fd;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+  background-color: rgba(40, 42, 54, 0.3);
+  border-radius: 4px;
+  padding: 0.75rem;
 }
 
 .input:focus, .textarea:focus {
   outline: none;
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.2);
 }
 
 .inputError {
-  border-color: #e53e3e;
+  color: #ff5555;
+  text-decoration: underline;
+  text-decoration-color: #ff5555;
+  text-decoration-style: wavy;
+}
+
+.inputPrefix {
+  color: #50fa7b;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-family: inherit;
+  user-select: none;
 }
 
 .errorText {
-  color: #e53e3e;
+  color: #ff5555;
   font-size: 0.875rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.errorText::before {
+  content: '!';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background-color: #ff5555;
+  color: #282a36;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 0.75rem;
 }
 
 .submitButton {
-  background-color: var(--ifm-color-primary);
-  color: white;
-  border: none;
+  background-color: transparent;
+  color: #50fa7b;
+  border: 1px solid #50fa7b;
   border-radius: 4px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: normal;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
-  align-self: center;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.submitButton::before {
+  content: '$ ';
+  margin-right: 0.5rem;
+  color: #50fa7b;
+  font-weight: bold;
 }
 
 .submitButton:hover {
-  background-color: var(--ifm-color-primary-darker);
-}
-
-.submitButton:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(var(--ifm-color-primary-rgb), 0.4);
+  background-color: rgba(80, 250, 123, 0.1);
 }
 
 .footer {
@@ -105,10 +264,17 @@
 
 .homeLink {
   display: inline-block;
-  margin-top: 1rem;
-  color: var(--ifm-color-primary);
+  margin-top: 1.5rem;
+  color: #8be9fd;
   text-decoration: none;
-  font-weight: 500;
+  font-family: inherit;
+  position: relative;
+}
+
+.homeLink::before {
+  content: '$ cd';
+  color: #50fa7b;
+  margin-right: 0.5rem;
 }
 
 .homeLink:hover {
@@ -116,13 +282,21 @@
 }
 
 .thankYouMessage {
-  text-align: center;
   padding: 2rem 0;
 }
 
-.thankYouMessage h2 {
-  color: var(--ifm-color-success);
-  margin-bottom: 1rem;
+.thankYouMessage .terminalLine {
+  margin-bottom: 1.5rem;
+}
+
+.emailLink {
+  color: #8be9fd;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.emailLink:hover {
+  color: #ff79c6;
 }
 
 /* 响应式调整 */
