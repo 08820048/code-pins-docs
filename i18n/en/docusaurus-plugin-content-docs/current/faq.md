@@ -96,58 +96,45 @@ To fix this, you can either delete invalid pins or refresh the pins panel to att
 
 ### Q: Is there a limit to how many pins I can create?
 
-**A:** The free version has a limit of 50 pins per project. The professional version removes this limitation, allowing unlimited pins.
+**A:** No, there are no limits. CodePins is now completely free and open source, with no restrictions on the number of pins, tags, or any other features.
 
 ### Q: Can I share my pins with team members?
 
 **A:** Yes, you can share pins in several ways:
 1. Include the `.idea/codepins.xml` file in your version control system
 2. Use the export/import feature to share pin collections
-3. The professional version offers enhanced team collaboration features
+3. Use the built-in sharing features to collaborate with your team
 
 ### Q: Does CodePins work with remote development?
 
-**A:** Yes, CodePins works with remote development features in IntelliJ IDEs, but pins are stored locally by default. The professional version offers cloud synchronization for better remote development support.
+**A:** Yes, CodePins works with remote development features in IntelliJ IDEs. Pins are stored locally by default, but you can use version control or the export/import features to synchronize them across different environments.
 
 ### Q: Can I use CodePins across different projects?
 
-**A:** Pins are project-specific by default. However, you can:
-1. Export pins from one project and import them into another
-2. Use the professional version's global pins feature to share pins across projects
+**A:** Pins are project-specific by default. However, you can export pins from one project and import them into another to reuse your pins across different projects.
 
-## Upgrade and Purchase
+## Community Contribution
 
-### Q: What additional features does the professional version offer?
+### Q: How can I contribute to CodePins?
 
-**A:** The professional version includes:
-- Unlimited pins per project
-- Global pins across projects
-- Cloud synchronization
-- Advanced search capabilities
-- Custom tag colors and organization
-- Enhanced team collaboration features
-- Priority support
+**A:** As an open-source project, we welcome contributions from the community:
+1. Visit our GitHub repository
+2. Look through the Issues list to find tasks you're interested in
+3. Fork the repository and submit Pull Requests
+4. Suggest new features or report bugs
 
-### Q: How do I upgrade to the professional version?
+### Q: Can I add new features to CodePins?
 
-**A:** To upgrade:
-1. Visit the [CodePins website](https://www.codepins.com/purchase) or the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/20158-codepins)
-2. Select your license type (individual or team)
-3. Complete the purchase process
-4. Use the license key to activate the professional features in your IDE
+**A:** Absolutely! We welcome all forms of contribution, including new feature development, documentation improvements, bug fixes, and more. Please open an Issue on GitHub to discuss your ideas before starting development.
 
-### Q: Is there a trial version of the professional features?
+### Q: How can I get involved in the CodePins community?
 
-**A:** Yes, you can try the professional features free for 30 days. Activate the trial from the CodePins panel by clicking on the "Try Pro" button.
-
-### Q: Do you offer educational or open-source project discounts?
-
-**A:** Yes, we offer special discounts for:
-- Educational institutions and students
-- Open-source project contributors
-- Non-profit organizations
-
-Contact our sales team at sales@codepins.com for more information.
+**A:** There are many ways to get involved:
+1. Star and watch the GitHub repository for updates
+2. Join discussions on existing Issues
+3. Help answer questions from other users
+4. Contribute code, documentation, or translations
+5. Share CodePins with your network
 
 ## Other Questions
 

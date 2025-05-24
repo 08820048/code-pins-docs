@@ -19,6 +19,31 @@ This guide aims to introduce all features of the CodePins plugin in detail, help
 - Provide delete, clear, import/export, and sharing functions
 - Support sorting, drag-and-drop sorting, copying, refreshing, and other operations
 
+**Use Cases:**
+
+- Temporary code notes
+- Error location and tracking
+- TODO task management
+- Code navigation and marking
+
+## Open Source Announcement
+
+We are excited to announce that CodePins plugin is now completely free and open source! All features are available without any limitations, including:
+
+| Feature | Description |
+| ------- | ----------- |
+| **Pin Features** | Complete functionality (add, delete, search, navigate) |
+| **Tag Count** | Unlimited |
+| **Tag Types** | Unlimited |
+| **Pin Count** | Unlimited |
+| **Sharing Features** | Support for multiple sharing methods |
+| **Sorting Features** | Support for multiple sorting methods |
+| **Import/Export** | Support for multiple formats |
+| **Watermark Settings** | Support for custom export image watermarks |
+| **Technical Support** | Community support |
+
+> Note: We welcome community contributions. If you have any suggestions or want to participate in development, please visit our GitHub repository.
+
 ## Installation and Configuration
 
 <div className="feature-box">
@@ -63,7 +88,7 @@ This guide aims to introduce all features of the CodePins plugin in detail, help
     <ul>
       <li><strong>Line Pin</strong>: Marks a single line of code</li>
       <li><strong>Block Pin</strong>: Marks a block of code (select multiple lines before adding)</li>
-      <li><strong>File Pin</strong>: Marks an entire file (professional version feature)</li>
+      <li><strong>File Pin</strong>: Marks an entire file</li>
     </ul>
   </div>
 </div>
@@ -152,7 +177,7 @@ When adding tags, use meaningful categories like #bug, #todo, #important to bett
       <li><strong>File Path</strong>: Search by file name or path</li>
       <li><strong>Notes</strong>: Search within pin notes</li>
       <li><strong>Tags</strong>: Search by tag name (with or without the # symbol)</li>
-      <li><strong>Code Content</strong>: Search within the pinned code content (professional version)</li>
+      <li><strong>Code Content</strong>: Search within the pinned code content</li>
     </ul>
     
     <h4>Tag Filtering</h4>
@@ -186,7 +211,7 @@ When adding tags, use meaningful categories like #bug, #todo, #important to bett
     <h4>Other Management Features</h4>
     <ul>
       <li><strong>Copy</strong>: Right-click on a pin and select "Copy" to copy the pin's information</li>
-      <li><strong>Share</strong>: Right-click on a pin and select "Share" to generate a shareable link (professional version)</li>
+      <li><strong>Share</strong>: Right-click on a pin and select "Share" to generate a shareable link</li>
       <li><strong>Batch Operations</strong>: Select multiple pins to perform batch operations like tagging, copying, or deleting</li>
     </ul>
   </div>
