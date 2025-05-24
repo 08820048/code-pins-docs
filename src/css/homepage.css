@@ -35,9 +35,29 @@
   line-height: 1.6;
 }
 
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .get-started-btn {
   font-size: 1.1rem;
   padding: 0.75rem 2rem;
+}
+
+.github-btn {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
 }
 
 .features-section {
