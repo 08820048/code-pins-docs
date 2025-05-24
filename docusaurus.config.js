@@ -131,7 +131,7 @@ const config = {
         items: [
           {
             to: '/docs/intro',
-            label: '使用文档',
+            label: '文档',
             position: 'left',
           },
           {
