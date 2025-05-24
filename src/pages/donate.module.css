@@ -1,0 +1,192 @@
+/* 捐赠页面样式 */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.donateContainer {
+  max-width: 900px;
+  width: 100%;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary);
+  font-size: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.2rem;
+}
+
+.donateSection {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary-lighter);
+}
+
+.donateText {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.donateLink {
+  display: inline-block;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 1rem 0;
+  transition: background-color 0.2s ease;
+}
+
+.donateLink:hover {
+  background-color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+  color: white;
+}
+
+.qrCodesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.qrCodeBox {
+  text-align: center;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  margin-bottom: 1rem;
+  background: #fff;
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+}
+
+.qrCodeTitle {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0.5rem;
+}
+
+.donorList {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.donorTitle {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.donorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.donorItem {
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 4px;
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.donorName {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.donorAmount {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.thankYouNote {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.homeLink {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.homeLink:hover {
+  background-color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+  color: white;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .donateContainer {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .qrCodesContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .donorGrid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

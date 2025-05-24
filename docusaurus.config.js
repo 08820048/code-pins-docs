@@ -135,6 +135,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/donate',
+            label: '捐赠',
+            position: 'left',
+          },
+          {
             href: 'https://plugins.jetbrains.com/plugin/27300-codepins--code-bookmarks/edit/versions',
             label: 'Download',
             position: 'right',
@@ -185,6 +190,10 @@ const config = {
               {
                 label: '问题反馈',
                 to: '/bug-report',
+              },
+              {
+                label: '捐赠',
+                to: '/donate',
               },
               // JetBrains Marketplace Widget
               {
