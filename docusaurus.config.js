@@ -41,23 +41,8 @@ const config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-
-  i18n: {
-    defaultLocale: 'zh-CN',
-    locales: ['zh-CN', 'en'],
-    localeConfigs: {
-      'zh-CN': {
-        label: '中文',
-        direction: 'ltr',
-      },
-      'en': {
-        label: 'English',
-        direction: 'ltr',
-      },
-    },
-  },
 
   presets: [
     [
@@ -130,9 +115,10 @@ const config = {
         },
         items: [
           {
-            to: '/docs/intro',
-            label: '文档',
+            type: 'doc',
+            docId: 'intro',
             position: 'left',
+            label: '文档',
           },
           {
             to: '/donate',
@@ -142,10 +128,6 @@ const config = {
           {
             href: 'https://plugins.jetbrains.com/plugin/27300-codepins--code-bookmarks/edit/versions',
             label: 'Download',
-            position: 'right',
-          },
-          {
-            type: 'localeDropdown',
             position: 'right',
           },
         ],

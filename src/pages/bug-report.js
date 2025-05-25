@@ -18,26 +18,28 @@ export default function BugReport() {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+
+
   // 表单字段配置
   const formFields = [
     {
       name: 'name',
       label: '姓名',
-      placeholder: '请输入您的姓名（可选）',
+      placeholder: '输入您的姓名（可选）',
       required: false,
       type: 'text'
     },
     {
       name: 'email',
       label: '邮箱',
-      placeholder: '请输入您的邮箱地址',
+      placeholder: '输入您的邮箱地址',
       required: true,
       type: 'email'
     },
     {
       name: 'title',
       label: '问题标题',
-      placeholder: '请输入问题标题',
+      placeholder: '输入问题标题',
       required: true,
       type: 'text'
     },
@@ -50,8 +52,8 @@ export default function BugReport() {
     },
     {
       name: 'steps',
-      label: '重现步骤',
-      placeholder: '请描述如何重现这个问题（可选）',
+      label: '复现步骤',
+      placeholder: '描述如何复现这个问题（可选）',
       required: false,
       type: 'textarea'
     },
@@ -89,14 +91,14 @@ export default function BugReport() {
     // 检查必填字段
     formFields.forEach(field => {
       if (field.required && !formData[field.name]) {
-        newErrors[field.name] = `请填写${field.label}`;
+        newErrors[field.name] = `请填写 ${field.label}`;
         isValid = false;
       }
     });
     
     // 验证邮箱格式
     if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = '请输入有效的邮箱地址';
+      newErrors.email = '请输入有效的电子邮件地址';
       isValid = false;
     }
     
@@ -124,12 +126,12 @@ export default function BugReport() {
       if (response.ok) {
         setSubmitted(true);
       } else {
-        console.error('表单提交失败');
-        alert('提交失败，请稍后重试');
+        console.error('Form submission failed');
+        alert('提交失败，请稍后再试');
       }
     } catch (error) {
-      console.error('提交过程中发生错误:', error);
-      alert('提交失败，请稍后重试');
+      console.error('Error during submission:', error);
+      alert(t.errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -147,7 +149,7 @@ export default function BugReport() {
             <div className={styles.thankYouMessage}>
               <div className={styles.successMessage}>
                 <h2>感谢您的反馈！</h2>
-                <p>我们已收到您的问题报告，将尽快处理并回复。</p>
+                <p>我们已收到您的问题报告，将尽快处理。</p>
               </div>
               <Link to="/" className={styles.homeLink}>返回首页</Link>
             </div>
@@ -194,7 +196,7 @@ export default function BugReport() {
                   className={styles.submitButton}
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? '提交中...' : '提交反馈'}
+                  {isSubmitting ? '提交中...' : '提交报告'}
                 </button>
               </div>
             </form>
